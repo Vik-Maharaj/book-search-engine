@@ -1,4 +1,4 @@
-Vik's Book Search Engine
+# Vik's Book Search Engine
 
 ## Description
 
@@ -18,7 +18,7 @@ GraphQL, ApolloServer, Express, React, Mongoose, JWT, React Hooks, UseState, Use
 
 
 
-
+git s
 
 The app runs entirely in the browser, can be accessed from anywhere, and was created utilizing JavaScript, Node.js, Express.js, and MongoDB. It includes the following features:
 
@@ -54,11 +54,13 @@ THEN I am logged out of the site and presented with a menu with the options Sear
 
 
 
-Here is a screenshot example of the app in use:
+Here are a couple of screenshot examples of the app in use:
 
-![Vik's Budget Search Engine App](public/assets/screenshot.png)
+![Vik's Book Search Engine](client/src/assets/screenshot-01.png)
 
-The deployed site can be found at https://vik-budget-tracker.herokuapp.com.
+![Vik's Book Search Engine](client/src/assets/screenshot-02.png)
+
+The deployed site can be found at https://vik-book-search-engine.herokuapp.com.
 
 
 ## Installation
@@ -68,6 +70,11 @@ To install this application, first clone the repo to your local machine. Then, y
 ## Usage
 
 Once the dependencies are installed, to use the application, initialize the server with the following command, ```npm run start```, and it can then be opened locally (or accessed any time via the above deployed site url).
+
+Use the search bar to input any subject, title, or author then click "Submit Search."
+If you would like to save books to a list you can access later, then click "Login/Sign Up" in the top right corner.
+After signing up or loggin in, there will no be a blue button at the bottom of each book that says, "Save this Book!."
+Saved books will now be in your books list, which can be access by the "See Your Books" link in the top right corner by the "Logout" button.
 
 ## Credits
 
