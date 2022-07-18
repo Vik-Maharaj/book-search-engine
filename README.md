@@ -2,57 +2,19 @@
 
 ## Description
 
-Keeping track of personal finances is important - it is extra important for a person who travels often. Their need to track withdrawals and deposits while on the go is essential, hence the reason for the creation of this full-stack web application.
+Avid readers need a way to find new books to add to their repirotire, so to make the process of finding new books, and adding them to a list for future use, this full stack app was concieved and created.
 
-AS AN avid reader
-I WANT to search for new books to read
-SO THAT I can keep a list of books to purchase
+This simple to use app runs entirely in the browser, can be accessed from anywhere, and was created utilizing JavaScript, Node.js, Express.js, and MongoDB. Google Books API search engine built with a RESTful API, refactor it to be a GraphQL API built with Apollo Server, and also featuters the following features JWT, React Hooks, UseState, UseEffect, as well as the following functionality:
 
-Using starter code with a fully functioning Google Books API search engine built with a RESTful API, refactor it to be a GraphQL API built with Apollo Server.
-
-To better understand the advantages/disadvantages of a GraphQL API service vs a RESTful API.  Also to practice fully integrating an express server with a react frontend.
-
-GraphQL, ApolloServer, Express, React, Mongoose, JWT, React Hooks, UseState, UseEffect 
-
-
-
-
-
-git s
-
-The app runs entirely in the browser, can be accessed from anywhere, and was created utilizing JavaScript, Node.js, Express.js, and MongoDB. It includes the following features:
-
-- GIVEN a book search engine
-WHEN I load the search engine
-THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
-WHEN I click on the Search for Books menu option
-THEN I am presented with an input field to search for books and a submit button
-WHEN I am not logged in and enter a search term in the input field and click the submit button
-THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site
-WHEN I click on the Login/Signup menu option
-THEN a modal appears on the screen with a toggle between the option to log in or sign up
-WHEN the toggle is set to Signup
-THEN I am presented with three inputs for a username, an email address, and a password, and a signup button
-WHEN the toggle is set to Login
-THEN I am presented with two inputs for an email address and a password and login button
-WHEN I enter a valid email address and create a password and click on the signup button
-THEN my user account is created and I am logged in to the site
-WHEN I enter my account’s email address and password and click on the login button
-THEN I the modal closes and I am logged in to the site
-WHEN I am logged in to the site
-THEN the menu options change to Search for Books, an option to see my saved books, and Logout
-WHEN I am logged in and enter a search term in the input field and click the submit button
-THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site and a button to save a book to my account
-WHEN I click on the Save button on a book
-THEN that book’s information is saved to my account
-WHEN I click on the option to see my saved books
-THEN I am presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account
-WHEN I click on the Remove button on a book
-THEN that book is deleted from my saved books list
-WHEN I click on the Logout button
-THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
-
-
+- When the user loads the page they are presented with the search engine with a menu of options Search for Books and Login/Signup and an input field to search for books and a submit button
+- If a user enter a search term in the input field and click the submit button they are presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site
+- If the user decides to click the Login/Signup menu option then modal appears on the screen with a toggle between the option to log in or sign up
+- Once a user signs up Signup, they can enter username, an email address, and a password, and a signup button and they are signed in
+- If the user has previously signed in, they are able to log in and presented with two inputs for an email address and a password and login button
+- Once the user is logged in, they have options change to Search for Books, an option to see my saved books, and Logout
+- If the user searches for and finds a book they are intetrested in, they can click on the Save button on a book and that book’s information is saved to their account
+- When the user clicks on the option to view their saved books, they are presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account
+- At that point the user can click on the Remove button on a book and that book is deleted from my saved books list
 
 Here are a couple of screenshot examples of the app in use:
 
@@ -65,7 +27,7 @@ The deployed site can be found at https://vik-book-search-engine.herokuapp.com.
 
 ## Installation
 
-To install this application, first clone the repo to your local machine. Then, you will need to install the node dependencies/modules which can be done by running the ```npm install``` command in your terminal/bash shell. 
+To install this application on your computer, first clone the repo to your local machine. Then, you will need to install the node dependencies/modules which can be done by running the ```npm install``` command in your terminal/bash shell. 
 
 ## Usage
 
