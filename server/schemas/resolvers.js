@@ -10,6 +10,34 @@ const resolvers = {
         }
       }
     },
+
+    Mutation: {
+        login: async (parent, { email, password }) => {
+          const user = await User.findOne({ email: email });
+    
+          if (!user) {
+            throw new AuthenticationError('No User with this email found!');
+          }
+    
+          const correctPW = await user.isCorrectPassword(password);
+    
+          if (!correctPW) {
+            throw new AuthenticationError('Incorrect password entered!');
+          }
+    
+          const token = signToken(user);
+          return { token, user };
+        },
+        addUser: async (parent, { username, email, password }) => {
+          const user = await User.create({ username, email, password });
+          const token = signToken(user);
+    
+          if (!user) {
+            console.log('Could not creat a new user.');
+          }
+    
+          return { token, user };
+        },
 }
 
 module.exports = resolvers;
