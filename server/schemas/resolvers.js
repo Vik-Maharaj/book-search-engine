@@ -38,6 +38,17 @@ const resolvers = {
     
           return { token, user };
         },
+
+        saveBook: async (parent, args, context) => {
+            if (context.user) {
+              return User.findOneAndUpdate(
+                { _id: context.user._id },
+                { $addToSet: { savedBooks: args } },
+                { new: true, runValidators: true }
+              );
+            }
+            throw new AuthenticationError("You need to be logged in!");
+          },
 }
 
 module.exports = resolvers;
